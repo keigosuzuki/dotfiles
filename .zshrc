@@ -19,17 +19,6 @@ alias ssh='~/bin/ssh-change-profile.sh' # ssh-change-profile
 export CLICOLOR=1
 export TERM=xterm-256color
 
-# prompt
-autoload -Uz vcs_info
-setopt prompt_subst
-zstyle ':vcs_info:*' actionformats '[%b|%a]'
-zstyle ':vcs_info:*' formats '%F{cyan}%c%u[%b]%f'
-zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr  '%F{magenta}'
-zstyle ':vcs_info:git:*' unstagedstr '%F{yellow}+'
-precmd () { vcs_info }
-PROMPT='%F{green}%~%f%F{cyan}$vcs_info_msg_0_%f%F{yellow}%%%f '
-
 # openjdk
 export CPPFLAGS="-/usr/local/opt/openjdk/include"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
@@ -49,16 +38,14 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
-
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -U compinit
 compinit
 
 export PATH="/usr/local/bin:$PATH"
+
+# profiling
+if (which zprof > /dev/null 2>&1) ;then
+    zprof
+fi
