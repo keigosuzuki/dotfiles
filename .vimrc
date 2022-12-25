@@ -9,6 +9,7 @@ Plug 'neoclide/coc.nvim', { 'on': [], 'branch': 'release'}
 Plug 'vim-airline/vim-airline', { 'on': [] }
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons', { 'on': [] }
+plug#end()
 # coc.nvim
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nmap <silent> gd <Plug>(coc-definition)
@@ -18,7 +19,6 @@ g:airline_powerline_fonts = 1
 g:airline_theme = 'wombat'
 # nerdtree
 map <C-n> :NERDTreeToggle<CR>
-plug#end()
 
 def Load_plug(timer: any)
     plug#load(
