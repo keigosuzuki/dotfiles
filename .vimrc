@@ -3,6 +3,32 @@ vim9script
 syntax enable # シンタックスハイライト
 colorscheme seoul256
 
+# plugin
+plug#begin('~/.vim/plugged')
+Plug 'neoclide/coc.nvim', { 'on': [], 'branch': 'release'}
+Plug 'vim-airline/vim-airline', { 'on': [] }
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons', { 'on': [] }
+# coc.nvim
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+nmap <silent> gd <Plug>(coc-definition)
+# airline
+g:airline#extensions#tabline#enabled = 1
+g:airline_powerline_fonts = 1
+g:airline_theme = 'wombat'
+# nerdtree
+map <C-n> :NERDTreeToggle<CR>
+plug#end()
+
+def Load_plug(timer: any)
+    plug#load(
+        'coc.nvim',
+        'vim-airline',
+        'vim-devicons',
+    )
+enddef
+timer_start(10, Load_plug)
+
 # options
 set autoindent # 改行時インデント保持
 set expandtab # タブで空白挿入
@@ -13,8 +39,10 @@ set tabstop=4
 set autoread # 外部変更を自動読み込み
 set noswapfile
 set ttimeoutlen=50 # ノーマルモード切り替え時の遅延低減
+set viminfo=
 
 set backspace=indent,eol,start # バックスペースの働く対象
+set clipboard=exclude:.*
 set hidden # バッファ切り替え時の警告を無効化
 
 set cursorline # 現在の行をハイライト
@@ -41,29 +69,3 @@ set whichwrap=b,s,h,l,<,>,[,] # 行を跨いだ移動
 # key map
 nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
-
-# plugin
-plug#begin('~/.vim/plugged')
-Plug 'neoclide/coc.nvim', { 'on': [], 'branch': 'release'}
-Plug 'scrooloose/nerdtree', { 'on': [] }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
-# coc.nvim
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-nmap <silent> gd <Plug>(coc-definition)
-# airline
-g:airline#extensions#tabline#enabled = 1
-g:airline_powerline_fonts = 1
-g:airline_theme = 'wombat'
-# nerdtree
-map <C-n> :NERDTreeToggle<CR>
-plug#end()
-
-def Load_plug(timer: any)
-    plug#load(
-        'coc.nvim',
-        'nerdtree',
-    )
-enddef
-timer_start(500, Load_plug)
