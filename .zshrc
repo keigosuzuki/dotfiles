@@ -40,8 +40,7 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-autoload -U compinit
-compinit
+autoload -Uz compinit && compinit
 
 export PATH="/usr/local/bin:$PATH"
 
