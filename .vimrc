@@ -15,7 +15,6 @@ set noswapfile
 set ttimeoutlen=50 # ノーマルモード切り替え時の遅延低減
 
 set backspace=indent,eol,start # バックスペースの働く対象
-set clipboard+=unnamed # クリップボード有効化
 set hidden # バッファ切り替え時の警告を無効化
 
 set cursorline # 現在の行をハイライト
