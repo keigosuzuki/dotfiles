@@ -13,6 +13,7 @@ set tabstop=4
 set autoread # 外部変更を自動読み込み
 set noswapfile
 set ttimeoutlen=50 # ノーマルモード切り替え時の遅延低減
+set viminfo=f0,<10,:10,@10,/10
 
 set backspace=indent,eol,start # バックスペースの働く対象
 set clipboard+=unnamed # クリップボード有効化
@@ -68,17 +69,3 @@ def Load_plug(timer: any)
     )
 enddef
 timer_start(500, Load_plug)
-
-# clang_format
-def Clang_format()
-    now_line = line(".")
-    exec ":%! ~/.clang-format"
-    exec "." .now_line
-enddef
-
-if executable("~/.clang-format")
-    augroup cpp_clang_format
-        autocmd!
-        autocmd Bufwrite,FileWritePre,FileAppendPre *.[ch]pp Clang_format()
-    augroup END
-endif
