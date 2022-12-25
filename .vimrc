@@ -45,11 +45,11 @@ nnoremap <silent> <C-k> :bnext<CR>
 
 # plugin
 plug#begin('~/.vim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', { 'on': [], 'branch': 'release'}
 Plug 'scrooloose/nerdtree', { 'on': [] }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons', { 'on': [] }
+Plug 'ryanoasis/vim-devicons'
 # coc.nvim
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nmap <silent> gd <Plug>(coc-definition)
@@ -63,8 +63,8 @@ plug#end()
 
 def Load_plug(timer: any)
     plug#load(
+        'coc.nvim',
         'nerdtree',
-        'vim-devicons',
     )
 enddef
 timer_start(500, Load_plug)
