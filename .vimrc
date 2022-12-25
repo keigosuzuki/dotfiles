@@ -1,3 +1,5 @@
+vim9script
+
 syntax enable # シンタックスハイライト
 colorscheme seoul256
 
@@ -42,7 +44,7 @@ nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
 
 # plugin
-call plug#begin('~/.vim/plugged')
+plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree', { 'on': [] }
 Plug 'vim-airline/vim-airline'
@@ -52,31 +54,31 @@ Plug 'ryanoasis/vim-devicons', { 'on': [] }
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nmap <silent> gd <Plug>(coc-definition)
 # airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'wombat'
+g:airline#extensions#tabline#enabled = 1
+g:airline_powerline_fonts = 1
+g:airline_theme = 'wombat'
 # nerdtree
 map <C-n> :NERDTreeToggle<CR>
-call plug#end()
+plug#end()
 
-function! s:load_plug(timer)
-    call plug#load(
-                \ 'nerdtree',
-                \ 'vim-devicons',
-                \ )
-endfunction
-call timer_start(500, function("s:load_plug"))
+def Load_plug(timer: any)
+    plug#load(
+        'nerdtree',
+        'vim-devicons',
+    )
+enddef
+timer_start(500, Load_plug)
 
 # clang_format
-function! s:clang_format()
-    let l:save = winsaveview()
-    :silent %! clang-format -style=file
-    call winrestview(l:save)
-endfunction
+def Clang_format()
+    now_line = line(".")
+    exec ":%! ~/.clang-format"
+    exec "." .now_line
+enddef
 
-if executable("clang-format")
+if executable("~/.clang-format")
     augroup cpp_clang_format
         autocmd!
-        autocmd Bufwrite,FileWritePre,FileAppendPre *.[ch]pp call s:clang_format()
+        autocmd Bufwrite,FileWritePre,FileAppendPre *.[ch]pp Clang_format()
     augroup END
 endif
