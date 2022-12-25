@@ -1,5 +1,6 @@
 vim9script
 
+set regexpengine=1
 syntax enable # シンタックスハイライト
 colorscheme seoul256
 
@@ -27,7 +28,7 @@ def Load_plug(timer: any)
         'vim-devicons',
     )
 enddef
-timer_start(10, Load_plug)
+timer_start(20, Load_plug)
 
 # options
 set autoindent # 改行時インデント保持
