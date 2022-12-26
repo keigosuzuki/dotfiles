@@ -1,4 +1,4 @@
-vim9script
+vim9script noclear
 
 set regexpengine=1
 syntax enable # シンタックスハイライト
