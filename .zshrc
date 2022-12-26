@@ -17,28 +17,6 @@ alias clang="clang -std=c99 -Wall -Wextra"
 alias clang++="clang++ -std=c++17 -Wall -Wextra -Wconversion"
 alias ssh='~/bin/ssh-change-profile.sh' # ssh-change-profile
 
-# color
-export CLICOLOR=1
-export TERM=xterm-256color
-
-# openjdk
-export CPPFLAGS="-/usr/local/opt/openjdk/include"
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-
-# pyenv
-pyenv() {
-    unset -f pyenv
-    eval "$(command pyenv init -)"
-    pyenv $@
-}
-export PATH="$PYENV_ROOT/shims:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-
-# zlib
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
-export LDFLAGS="-L/usr/local/opt/zlib/lib"
-export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
-
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
