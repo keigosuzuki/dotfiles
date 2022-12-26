@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # alias
@@ -26,7 +26,11 @@ export CPPFLAGS="-/usr/local/opt/openjdk/include"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # pyenv
-eval "$(pyenv init -)"
+pyenv() {
+    unset -f pyenv
+    eval "$(command pyenv init -)"
+    pyenv $@
+}
 export PATH="$PYENV_ROOT/shims:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 
@@ -42,9 +46,26 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-autoload -Uz compinit && compinit
+_compinit() {
+    local re_initialize=0
+    for match in ${ZDOTDIR}/.zcompdump*(.Nmh+24); do
+        re_initialize=1
+        break
+    done
+
+    autoload -Uz compinit
+    if [ "$re_initialize" -eq "1" ]; then
+        compinit
+        # update the timestamp on compdump file
+        compdump
+    else
+        # omit the check for new functions since we updated today
+        compinit -C
+    fi
+}
+_compinit
 
 # profiling
-if (which zprof > /dev/null 2>&1) ;then
-    zprof
-fi
+#if (which zprof > /dev/null 2>&1) ;then
+#zprof
+#fi
