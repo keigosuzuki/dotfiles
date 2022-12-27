@@ -24,7 +24,6 @@ g:airline_theme = 'wombat'
 # options
 set autoindent # 改行時インデント保持
 set smartindent
-set cindent
 set expandtab # タブで空白挿入
 set shiftwidth=4
 set softtabstop=4
