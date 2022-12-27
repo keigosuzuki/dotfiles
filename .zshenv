@@ -2,7 +2,6 @@
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/usr/local/share/vim/vim90:$PATH"
 export PATH="${PATH}:${HOME}/.robotech/bin"
 
 # color
