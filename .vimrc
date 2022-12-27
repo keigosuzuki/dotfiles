@@ -47,16 +47,16 @@ set hlsearch # 検索結果を強調表示
 set incsearch # 検索リアルタイム表示
 set smartcase # 検索で大文字小文字を区別しない
 
+set mouse=a # マウス有効化
+set scrolloff=8 # スクロール時余分に行表示
+set whichwrap=b,s,h,l,<,>,[,] # 行を跨いだ移動
+
 # background color
 highlight EndOfBuffer ctermbg=none
 highlight Folded ctermbg=none
 highlight LineNr ctermbg=none
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
-
-set mouse=a # マウス有効化
-set scrolloff=8 # スクロール時余分に行表示
-set whichwrap=b,s,h,l,<,>,[,] # 行を跨いだ移動
 
 # key map
 nnoremap <silent> <C-j> :bprev<CR>
