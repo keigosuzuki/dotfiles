@@ -32,7 +32,7 @@ set tabstop=4
 set autoread # 外部変更を自動読み込み
 set noswapfile
 set ttimeoutlen=50 # ノーマルモード切り替え時の遅延低減
-set viminfo=
+set viminfo='1000,f1,<500
 
 set backspace=indent,eol,start # バックスペースの働く対象
 set clipboard=exclude:.*
