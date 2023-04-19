@@ -12,14 +12,43 @@ Jetpack 'neoclide/coc.nvim', {'branch': 'release'}
 Jetpack 'vim-airline/vim-airline'
 Jetpack 'vim-airline/vim-airline-themes'
 Jetpack 'ryanoasis/vim-devicons'
+Jetpack 'Shougo/vimproc.vim', {'do': 'make'}
+Jetpack 'thinca/vim-quickrun', {
+            \ 'depends': 'osyo-manga/shabadou.vim',
+            \ 'autoload': {
+            \   'mappings': [['nxo', '<Plug>(quickrun)']]
+            \ }}
 jetpack#end()
 # coc.nvim
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nmap <silent> gd <Plug>(coc-definition)
 # airline
+g:airline#extensions#disable_rtp_load = 1
 g:airline#extensions#tabline#enabled = 1
 g:airline_powerline_fonts = 1
 g:airline_theme = 'wombat'
+# quickrun
+nmap <Leader>r <Plug>(quickrun)
+g:quickrun_config = {
+    \ 'tex': {
+	    \ 'command': 'latexmk',
+	    \ 'outputter': 'error',
+	    \ 'outputter/error/success': 'null',
+	    \ 'outputter/error/error': 'quickfix',
+	    \ 'srcfile': expand("%"),
+	    \ 'cmdopt': '-pv',
+	    \ 'hook/sweep/files': [
+	    \                       '%S:p:r.synctex.gz',
+	    \                       '%S:p:r.log',
+	    \                       '%S:p:r.fls',
+	    \                       '%S:p:r.fdb_latexmk',
+	    \                       '%S:p:r.dvi',
+	    \                       '%S:p:r.aux'
+	    \                    ],
+	    \ 'exec': ['%c %o %a %s']
+    \ },
+}
+g:tex_conceal = ''
 
 # options
 set autoindent # 改行時インデント保持
