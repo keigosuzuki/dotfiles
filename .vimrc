@@ -2,7 +2,6 @@ vim9script noclear
 
 set regexpengine=1
 syntax enable # シンタックスハイライト
-colorscheme seoul256
 
 # plugin
 packadd vim-jetpack
@@ -26,7 +25,7 @@ nmap <silent> gd <Plug>(coc-definition)
 g:airline#extensions#disable_rtp_load = 1
 g:airline#extensions#tabline#enabled = 1
 g:airline_powerline_fonts = 1
-g:airline_theme = 'wombat'
+g:airline_theme = 'papercolor'
 # quickrun
 nmap <Leader>r <Plug>(quickrun)
 g:quickrun_config = {
@@ -70,6 +69,7 @@ set hidden # バッファ切り替え時の警告を無効化
 set cursorline # 現在の行をハイライト
 set nowrap # 折り返し表示をしない
 set number # 行番号表示
+set relativenumber
 set showcmd # コマンド表示
 set title # ファイル名表示
 

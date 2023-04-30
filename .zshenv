@@ -4,6 +4,8 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="${PATH}:${HOME}/.robotech/bin"
 
+export XDG_CONFIG_HOME="${HOME}/.config"
+
 # color
 export CLICOLOR=1
 export TERM=xterm-256color
