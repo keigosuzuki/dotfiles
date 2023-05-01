@@ -81,6 +81,9 @@ set mouse=a # マウス有効化
 set scrolloff=8 # スクロール時余分に行表示
 set whichwrap=b,s,h,l,<,>,[,] # 行を跨いだ移動
 
+set splitright
+set splitbelow
+
 # background color
 highlight EndOfBuffer ctermbg=none
 highlight Folded ctermbg=none
