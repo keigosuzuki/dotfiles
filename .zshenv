@@ -4,6 +4,8 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="${PATH}:${HOME}/.robotech/bin"
 
+export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+
 export XDG_CONFIG_HOME="${HOME}/.config"
 
 # color

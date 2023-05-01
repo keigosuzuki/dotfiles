@@ -27,7 +27,7 @@ g:airline#extensions#tabline#enabled = 1
 g:airline_powerline_fonts = 1
 g:airline_theme = 'papercolor'
 # quickrun
-nmap <Leader>r <Plug>(quickrun)
+nmap <Space>r <Plug>(quickrun)
 g:quickrun_config = {
     \ 'tex': {
 	    \ 'command': 'latexmk',
