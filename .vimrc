@@ -8,7 +8,7 @@ packadd vim-jetpack
 jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
 Jetpack 'neoclide/coc.nvim', {'branch': 'release'}
-Jetpack 'vim-airline/vim-airline'
+Jetpack 'vim-airline/vim-airline', {'branch': 'vim9script'}
 Jetpack 'vim-airline/vim-airline-themes'
 Jetpack 'ryanoasis/vim-devicons'
 Jetpack 'Shougo/vimproc.vim', {'do': 'make'}
@@ -60,7 +60,7 @@ set tabstop=4
 set autoread # 外部変更を自動読み込み
 set noswapfile
 set ttimeoutlen=50 # ノーマルモード切り替え時の遅延低減
-set viminfo='1000,f1,<500
+set viminfo=
 
 set backspace=indent,eol,start # バックスペースの働く対象
 set clipboard=exclude:.*

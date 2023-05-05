@@ -115,3 +115,96 @@ times in msec
 320.877  000.113  000.113: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/_/autoload/airline/extensions/tabline/buflist.vim
 334.459  018.522: first screen update
 334.462  000.003: --- VIM STARTED ---
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.021  000.021: --- VIM STARTING ---
+000.122  000.101: Allocated generic buffers
+017.506  017.384: locale set
+017.515  000.009: clipboard setup
+017.519  000.004: window checked
+042.180  024.661: inits 1
+042.205  000.025: parsing arguments
+042.206  000.001: expanding arguments
+060.939  018.733: shell init
+063.856  002.917: Termcap init
+063.901  000.045: inits 2
+064.060  000.159: init highlight
+075.930  001.416  001.416: sourcing /usr/local/share/vim/vim90/colors/lists/default.vim
+076.228  003.744  002.328: sourcing /usr/local/share/vim/vim90/syntax/syncolor.vim
+076.424  005.728  001.984: sourcing /usr/local/share/vim/vim90/syntax/synload.vim
+091.227  012.971  012.971: sourcing /usr/local/share/vim/vim90/filetype.vim
+091.745  023.050  004.351: sourcing /usr/local/share/vim/vim90/syntax/syntax.vim
+097.725  001.513  001.513: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim
+110.679  000.437  000.437: sourcing /usr/local/share/vim/vim90/syntax/nosyntax.vim
+112.519  000.066  000.066: sourcing /usr/local/share/vim/vim90/ftplugof.vim
+116.805  000.202  000.202: sourcing /usr/local/share/vim/vim90/syntax/syncolor.vim
+117.220  001.481  001.279: sourcing /usr/local/share/vim/vim90/syntax/synload.vim
+117.386  002.544  001.063: sourcing /usr/local/share/vim/vim90/syntax/syntax.vim
+118.419  000.031  000.031: sourcing /usr/local/share/vim/vim90/filetype.vim
+120.419  000.120  000.120: sourcing /usr/local/share/vim/vim90/ftplugin.vim
+120.987  054.377  026.616: sourcing $HOME/.vimrc
+121.014  002.577: sourcing vimrc file(s)
+124.252  000.688  000.688: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/_/plugin/hook.vim
+127.422  000.127  000.127: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-quickrun/plugin/quickrun.vim
+132.637  003.273  003.273: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-devicons/plugin/webdevicons.vim
+137.125  000.189  000.189: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/init.vim
+139.394  000.157  000.157: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/parts.vim
+141.368  000.059  000.059: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/formatter/short_path.vim
+144.858  000.322  000.322: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/util.vim
+145.079  010.226  009.499: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/plugin/airline.vim
+147.210  000.083  000.083: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline-themes/plugin/airline-themes.vim
+149.293  000.136  000.136: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vimproc.vim/plugin/vimproc.vim
+153.637  000.314  000.314: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/coc.nvim/autoload/coc/rpc.vim
+156.252  000.623  000.623: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/coc.nvim/autoload/coc/util.vim
+160.006  000.413  000.413: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/coc.nvim/autoload/coc/client.vim
+166.777  001.675  001.675: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/coc.nvim/autoload/coc/api.vim
+168.928  017.551  014.526: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/coc.nvim/plugin/coc.vim
+168.981  014.883: loading plugins
+169.504  000.523: loading packages
+173.247  001.023  001.023: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/_/after/plugin/hook.vim
+173.308  002.781: loading after plugins
+173.339  000.031: inits 3
+173.424  000.085: setting raw mode
+173.433  000.009: start termcap
+173.515  000.082: clearing screen
+178.468  000.677  000.677: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions.vim
+181.400  000.145  000.145: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/quickfix.vim
+184.349  000.639  000.639: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline.vim
+190.138  000.253  000.253: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/section.vim
+193.373  000.468  000.468: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/highlighter.vim
+194.132  006.703  005.982: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/term.vim
+197.283  000.398  000.398: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/hunks.vim
+200.031  000.111  000.111: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/coc.vim
+202.678  000.356  000.356: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/whitespace.vim
+206.060  000.258  000.258: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/po.vim
+209.491  000.221  000.221: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/wordcount.vim
+212.362  000.675  000.675: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline.vim
+215.218  000.148  000.148: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/autoshow.vim
+218.165  000.230  000.230: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/tabs.vim
+221.280  000.477  000.477: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/buffers.vim
+225.602  000.499  000.499: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/keymap.vim
+232.946  000.165  000.165: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/searchcount.vim
+244.875  000.338  000.338: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/themes.vim
+245.851  003.841  003.503: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline-themes/autoload/airline/themes/papercolor.vim
+265.310  000.711  000.711: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline-themes/autoload/airline/themes/papercolor.vim
+312.865  000.455  000.455: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/builder.vim
+316.111  000.227  000.227: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/default.vim
+362.793  172.342: opening buffers
+362.822  000.029: BufEnter autocommands
+362.824  000.002: editing files in windows
+368.494  000.963  000.963: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/coc.nvim/autoload/coc/highlight.vim
+372.312  000.981  000.981: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/coc.nvim/autoload/coc/color.vim
+390.206  025.438: VimEnter autocommands
+390.219  000.013: before starting main loop
+396.603  000.269  000.269: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/ctrlspace.vim
+399.191  000.303  000.303: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/tabws.vim
+402.832  000.346  000.346: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/builder.vim
+405.423  000.161  000.161: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/buflist.vim
+419.235  000.054  000.054: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-devicons/autoload/airline/extensions/tabline/formatters/webdevicons.vim
+422.121  000.170  000.170: sourcing /Users/keigosuzuki/.vim/pack/jetpack/opt/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim
+433.501  041.979: first screen update
+433.506  000.005: --- VIM STARTED ---
