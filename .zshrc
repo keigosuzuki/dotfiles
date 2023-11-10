@@ -1,11 +1,10 @@
 # alias
 alias cat="bat"
-alias cubemx='open -n -a STM32CubeMX'
-alias cubeprogrammer='open -n -a STM32CubeProgrammer'
 alias eagle='open -n -a EAGLE'
+alias kicad='open -n -a KiCad'
 alias ls="exa"
-alias gcc="/usr/local/bin/gcc-12 -std=c99 -Wall -Wextra"
-alias g++="/usr/local/bin/g++-12 -std=c++17 -Wall -Wextra -Wconversion -pedantic"
+alias gcc="/usr/local/bin/gcc-13 -std=c99 -Wall -Wextra"
+alias g++="/usr/local/bin/g++-13 -std=c++17 -Wall -Wextra -Wconversion -pedantic"
 alias clang="clang -std=c99 -Wall -Wextra"
 alias clang++="clang++ -std=c++17 -Wall -Wextra -Wconversion"
 
@@ -32,3 +31,6 @@ _compinit
 #if (which zprof > /dev/null 2>&1) ;then
 #zprof
 #fi
+
+export PATH=$HOME/.progate/bin:$PATH
+export PATH="/usr/local/mysql-8.1.0-macos13-x86_64/bin:$PATH"  

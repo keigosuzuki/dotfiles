@@ -12,6 +12,9 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export CLICOLOR=1
 export TERM=xterm-256color
 
+# node
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+
 # openjdk
 export CPPFLAGS="-/usr/local/opt/openjdk/include"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
