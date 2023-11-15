@@ -34,3 +34,9 @@ _compinit
 
 export PATH=$HOME/.progate/bin:$PATH
 export PATH="/usr/local/mysql-8.1.0-macos13-x86_64/bin:$PATH"  
+
+export IS_SIM=ON
+export CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH
+export CPPYGEN_LIBCLANG_PATH=/usr/local/opt/llvm/lib/libclang.dylib
+export CC=/usr/local/opt/llvm/bin/clang
+export CXX=/usr/local/opt/llvm/bin/clang++
