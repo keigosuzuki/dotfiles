@@ -13,7 +13,8 @@ export CLICOLOR=1
 export TERM=xterm-256color
 
 # node
-export PATH="/usr/local/opt/node@14/bin:$PATH"
+export PATH="/usr/local/opt/node/bin:$PATH"
+#export PATH="/usr/local/opt/node@14/bin:$PATH"
 
 # openjdk
 export CPPFLAGS="-/usr/local/opt/openjdk/include"
