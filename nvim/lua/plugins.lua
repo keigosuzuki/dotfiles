@@ -21,6 +21,13 @@ return require('packer').startup{
             'nvim-telescope/telescope-fzf-native.nvim',
             run = 'make',
         }
+        use {
+            'hrsh7th/nvim-cmp',
+            requires = {
+                'hrsh7th/cmp-nvim-lsp', 
+                'hrsh7th/vim-vsnip',
+            },
+        }
         use { 
             'github/copilot.vim', 
             event = { 'FocusLost', 'CursorHold' } 
