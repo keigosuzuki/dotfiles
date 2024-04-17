@@ -2,6 +2,7 @@ vim9script noclear
 
 set regexpengine=1
 syntax enable # シンタックスハイライト
+colorscheme night-owl
 
 # plugin
 packadd vim-jetpack
@@ -25,7 +26,7 @@ nmap <silent> gd <Plug>(coc-definition)
 g:airline#extensions#disable_rtp_load = 1
 g:airline#extensions#tabline#enabled = 1
 g:airline_powerline_fonts = 1
-g:airline_theme = 'papercolor'
+g:airline_theme = 'deus'
 # quickrun
 nmap <Space>r <Plug>(quickrun)
 g:quickrun_config = {

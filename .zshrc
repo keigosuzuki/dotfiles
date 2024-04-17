@@ -1,5 +1,6 @@
 # alias
 alias cat="bat"
+alias cubeide='sudo /Applications/STM32CubeIDE.app/Contents/MacOS/stm32cubeide'
 alias eagle='open -n -a EAGLE'
 alias kicad='open -n -a KiCad'
 alias ls="exa"
