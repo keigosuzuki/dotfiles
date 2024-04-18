@@ -32,6 +32,9 @@ return require('packer').startup{
             'github/copilot.vim', 
             event = { 'FocusLost', 'CursorHold' } 
         }
+        use {
+            'is0n/jaq-nvim',
+        }
     end,
     config = {
         display = {

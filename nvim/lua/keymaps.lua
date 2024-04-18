@@ -4,3 +4,5 @@ vim.keymap.set('n', '<C-k>', ':bnext<CR>', { silent = true})
 
 vim.keymap.set("n", " ", "<Nop>", { silent = true, remap = false })
 vim.g.mapleader = " "
+
+vim.keymap.set('n', '<Space>r', ':Jaq<CR>', { silent = true})
