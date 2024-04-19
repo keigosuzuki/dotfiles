@@ -37,7 +37,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.showcmd = true
 vim.opt.title = true
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- ファイル
 vim.opt.autoread = true -- 外部変更を自動読み込み

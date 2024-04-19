@@ -6,14 +6,16 @@ require('jaq-nvim').setup{
   },
 
   behavior = {
-    default = "terminal"
+    default = "float",
+    wincmd = true
   },
 
   ui = {
-    terminal = {
-      position = "bot",
-      size = 0,
-      line_no = false
+    float = {
+      height = 0.1,
+      width = 0.35,
+      x = 1.0,
+      y = 0.97
     }
   }
 }
