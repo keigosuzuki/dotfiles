@@ -6,7 +6,7 @@ local switch_color = {
 require('lualine').setup {
     options = {
     icons_enabled = true,
-    theme = 'everforest',
+    theme = 'onenord',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {

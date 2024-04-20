@@ -7,10 +7,20 @@ return require('packer').startup{
             requires = {'nvim-tree/nvim-web-devicons', opt = true },
             wants = {'nvim-web-devicons'},
         }
+        use {
+            'rmehri01/onenord.nvim',
+        }
         use { 
             'williamboman/mason.nvim',
             requires = {'williamboman/mason-lspconfig.nvim', 'neovim/nvim-lspconfig', opt = true },
             wants = {'williamboman/mason-lspconfig.nvim', 'neovim/nvim-lspconfig'},
+        }
+        use {
+            'hrsh7th/nvim-cmp',
+            requires = {
+                'hrsh7th/cmp-nvim-lsp', 
+                'hrsh7th/vim-vsnip',
+            },
         }
         use { 
             'nvim-telescope/telescope.nvim', 
@@ -22,18 +32,11 @@ return require('packer').startup{
             run = 'make',
         }
         use {
-            'hrsh7th/nvim-cmp',
-            requires = {
-                'hrsh7th/cmp-nvim-lsp', 
-                'hrsh7th/vim-vsnip',
-            },
+            'is0n/jaq-nvim',
         }
         use { 
             'github/copilot.vim', 
             event = { 'FocusLost', 'CursorHold' } 
-        }
-        use {
-            'is0n/jaq-nvim',
         }
     end,
     config = {
