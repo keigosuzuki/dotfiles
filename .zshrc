@@ -3,6 +3,7 @@ alias cat="bat"
 alias cubeide='sudo /Applications/STM32CubeIDE.app/Contents/MacOS/stm32cubeide'
 alias eagle='open -n -a EAGLE'
 alias kicad='open -n -a KiCad'
+alias matlab='open -n -a MATLAB_R2024a'
 alias ls="exa"
 alias gcc="/usr/local/bin/gcc-13 -std=c99 -Wall -Wextra"
 alias g++="/usr/local/bin/g++-13 -std=c++17 -Wall -Wextra -Wconversion -pedantic"
