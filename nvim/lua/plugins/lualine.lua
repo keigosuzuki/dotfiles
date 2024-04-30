@@ -31,7 +31,7 @@ require('lualine').setup {
             {
                 'fileformat',
                 symbols = {
-                    unix = '',
+                    unix = '',
                     dos = '',
                     mac = '',
                 }
