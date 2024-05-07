@@ -1,7 +1,8 @@
 require('jaq-nvim').setup{
   cmds = {
     external = {
-      tex = "latexmk -pv % && latexmk -c %"
+      tex = "latexmk -pv % && latexmk -c %",
+      markdown = "marp --pdf % --html --allow-local-files --image-scale 2 && open $fileBase.pdf"
     }
   },
 
