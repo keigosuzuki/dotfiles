@@ -3,7 +3,7 @@
 #$bibtex           = 'pbibtex';
 #$dvipdf           = 'dvipdfmx %O -o %D %S';
 #$pdf_mode         = 3;
-$latex          = 'platex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error %S';
+$latex          = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error %S';
 $dvipdf         = 'dvipdfmx %O -o %D %S';
 $bibtex         = 'pbibtex -kanji=utf8 %B';
 $biber          = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
