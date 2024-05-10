@@ -38,6 +38,9 @@ return require('packer').startup{
             'github/copilot.vim', 
             event = { 'FocusLost', 'CursorHold' } 
         }
+        use {
+            'mattn/vim-sonictemplate',
+        }
     end,
     config = {
         display = {
