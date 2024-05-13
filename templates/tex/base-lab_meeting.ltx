@@ -1,0 +1,122 @@
+\documentclass[10pt,a4paper,oneside,twocolumn,fleqn,dvipdfmx]{jsarticle}
+% twocolumn use only
+
+% usepackage
+\usepackage{hyperref}
+\usepackage{pxjahyper}
+\hypersetup{
+    setpagesize=false,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+}
+\setcounter{tocdepth}{4}
+
+\usepackage{color}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\graphicspath{{./fig/}}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{ascmac}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{makeidx}
+\usepackage{mathtools}
+\usepackage{pifont}
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\usepackage{url}
+
+% font
+\usepackage[varg]{txfonts}
+\usepackage{bm}
+
+% margin
+\usepackage{geometry}
+\geometry{left=25mm,right=25mm,top=30mm,bottom=30mm}
+
+% useful newcommand
+\newcommand{\eq}[1]{Eq.(\ref{eq:#1})}
+\newcommand{\fig}[1]{Fig.\ \ref{fig:#1}}
+\newcommand{\tab}[1]{Table\ \ref{tab:#1}}
+
+% eeistitle setting
+\makeatletter
+\newcommand{\affiliation}[1]{\def\@affiliation{#1}}
+\newcommand{\documentname}[1]{\def\@documentname{#1}}
+\newcommand{\eeistitle}{
+    \twocolumn[
+        \centering{
+            \framebox[\linewidth]{
+                \parbox{\linewidth-2ex}{
+                \@documentname\hfill\@date
+                \begin{center}
+                    \Large{\bf{\@title}}
+                \end{center}
+                \@affiliation \hfill \@author
+                }
+            }
+        }
+        \vskip 2ex
+        \ifvoid\@abstractbox\else\centerline{\box\@abstractbox}
+    ]
+}
+\makeatother
+
+% fancyhdr setting
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\makeatletter
+\lhead{}
+\rhead{}
+\cfoot{\thepage{\ }/{\ }\pageref{LastPage}}
+\makeatother
+\renewcommand{\headrulewidth}{0pt}
+
+% document information
+\date{yyyy年mm月dd日}
+\title{日本語タイトル\\ English Title}
+\author{D1 37-000000 Denden Taro}
+\affiliation{Koseki Laboratory\\Department of Electrical Engineering}
+\documentname{古関研究室打合資料}
+
+% main document
+\begin{document}
+
+\begin{abstract}
+Write abstract here.
+\end{abstract}
+
+\eeistitle % use after abstract
+\thispagestyle{fancy}
+
+\section{はじめに}
+ここに序論を書く。
+
+\section{モデル化}
+
+\section{提案手法}
+
+\section{シミュレーション結果}
+
+\section{実験結果}
+
+\section{まとめ}
+ここに結論を書く。
+
+% bibliography
+\bibliographystyle{IEEEtran}
+\bibliography{ref} % use ref.bib
+
+\end{document}

@@ -11,4 +11,4 @@ require("plugins/nvim_cmp")
 require("plugins/telescope")
 require("plugins/jaq")
 
-vim.g.sonictemplate_vim_template_dir = '~/.config/nvim/templates'
+vim.g.sonictemplate_vim_template_dir = '~/Templates'
