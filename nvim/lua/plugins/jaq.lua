@@ -13,7 +13,7 @@ require('jaq-nvim').setup{
 
   ui = {
     float = {
-      height = 0.09,
+      height = 0.1,
       width = 0.35,
       x = 1.0,
       y = 0.97
